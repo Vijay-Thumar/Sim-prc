@@ -73,3 +73,4 @@ rm file_name                        ---> to remove file
 rm -r / rm -rf                      ---> to remove the file and folder / and with "rm -rf" to use force to delete, this will not 
         `                               // prompt you to delete all the file that contain 
                                         // normal delete will ask more and more to delete file that have information
+                                        
