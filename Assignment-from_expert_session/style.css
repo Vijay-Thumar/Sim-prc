@@ -14,23 +14,7 @@ img {
     height: auto;
     width: inherit;
 }
-
-.valueScetion {
-    background-color: antiquewhite;
-}
-
-.container {
-    border: 1px solid red;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1280px;
-}
-
-.subtitle {
-    max-width: 622px;
-}
-
-/* --------------------------------------------- */
+/****************************************** Section 1 **********************************************************/
 .bg_black{
     background-color: black;
 }
@@ -46,9 +30,7 @@ img {
 
 .flex_container>div {
     padding:10px 20px;
-    /* margin-top: 25px; */
     height: max-content;
-    /* flex-direction: row; */
 }
 
 .main_nav {
@@ -79,7 +61,7 @@ img {
     text-align: center;
     max-width: 170px;
 }
-
+/****************************************** Section 2 **********************************************************/
 .Section_2{
     background-color: #F2CF74;
     max-width: 1440px;
@@ -113,9 +95,12 @@ img {
     margin-left: 100px;
     margin-top: 15px;
 }
+
+/****************************************** Section 3 **********************************************************/
+
 .Section_3rd{
     margin-top: 131px;
-    height: 1754px;
+    height: 1600px;
     width: 100%;
     max-width: 1440px;
 }
@@ -135,14 +120,10 @@ img {
     grid-row-gap: 40px;
     margin-left: 100px;
     text-align: center;
-    /* background-color: #010202; */
-    /* padding: 10px; */
 }
 .grid_item{
     max-width: 220px;
     padding: 5px;
-    /* background-color: beige;
-    border: 1px solid black; */
     text-align: center;
 }
 .health_care{
@@ -197,4 +178,7 @@ img {
 }
 #footer{
     margin: 20px 0px;
+}
+.alignment{
+    margin-top: 30px;
 }
