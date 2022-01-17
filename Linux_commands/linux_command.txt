@@ -1,75 +1,100 @@
-ls - lsah                           ---> show the list of file with advance deail and size and also give hiden files to user
+ls - lsah                               ---> show the list of file with advance deail and size and also give hiden files to user
 
-pwd                                 ---> to see path where you at
-clear                               ---> to clear all output
-cd                                  ---> to change directory
-cd ../..                            ---> to jump to the root folder
-ls                                  ---> to see what folder contain
-ls home                             ---> to see specific view into folder 
--- help                             ---> to get command with argument
-echo                                ---> give you the echo what you enter
-which "program_name"                ---> to find program path
-ls -l                               ---> give you the more deail information of list of file
-ls -l -a                            ---> show you the hidden files
-touch "file_name", ".file_name"     ---> to create file
-ls --ignor "File_name"              ---> to ignore file
-cd ~                                ---> to quick jump to the home folder
-!!                                  ---> bang bang command re run the last command
+pwd                                     ---> to see path where you at
+clear                                   ---> to clear all output
+cd                                      ---> to change directory
+cd ../..                                ---> to jump to the root folder
+ls                                      ---> to see what folder contain
+ls home                                 ---> to see specific view into folder 
+-- help                                 ---> to get command with argument
+echo                                    ---> give you the echo what you enter
+which "program_name"                    ---> to find program path
+ls -l                                   ---> give you the more deail information of list of file
+ls -l -a                                ---> show you the hidden files
+touch "file_name", ".file_name"         ---> to create file
+ls --ignor "File_name"                  ---> to ignore file
+cd ~                                    ---> to quick jump to the home folder
+!!                                      ---> bang bang command re run the last command
 
 
 Shortcuts 
-ctrl + a                            ---> works like home
-ctrl + e                            ---> works like end
-ctrl + k                            ---> yank the after your coursor pointing to
-ctrl + u                            ---> yank the before where you coursor pointing from
-ctrl + y                            ---> pest that you yank before this command
+ctrl + a                                ---> works like home
+ctrl + e                                ---> works like end
+ctrl + k                                ---> yank the after your coursor pointing to
+ctrl + u                                ---> yank the before where you coursor pointing from
+ctrl + y                                ---> pest that you yank before this command
 
 
 Signals:
-ctrl + c                            ---> sigint signal interrupt
-ctrl + d                            ---> same as (ctrl+c) but more powerfull it force progeram to quit
-yes                                 ---> Special program that give y to every question in installation
+ctrl + c                                ---> sigint signal interrupt
+ctrl + d                                ---> same as (ctrl+c) but more powerfull it force progeram to quit
+yes                                     ---> Special program that give y to every question in installation
 
-kill -l                             ---> See all kill command form os decl with number to give in terminal as argument
-SIGTERM                             ---> Computer send this signal to all program to save and close let shutdown the Computer
-SIGKILL                             ---> kill (ASSASSINATE) the progeram Like: done with you amigo now stop
+kill -l                                 ---> See all kill command form os decl with number to give in terminal as argument
+SIGTERM                                 ---> Computer send this signal to all program to save and close let shutdown the Computer
+SIGKILL                                 ---> kill (ASSASSINATE) the progeram Like: done with you amigo now stop
                                         // " As example use this command to create infinite yes in background that we see
                                         // early ( yes > /dev/null & ) then catch that task with this command so you can kill
                                         // after ( ps aux | grep yes )" -----    ---> "kill -9 process_id"
 
 *******************************************************************************************************
 Nano: editor
-nano textfile.txt                   ---> To create the file name "textfile.txt" 
-ctrl+o                              ---> to save then enter
-ctrl+x                              ---> to exit and if ask hit enter
+nano textfile.txt                       ---> To create the file name "textfile.txt" 
+ctrl+o                                  ---> to save then enter
+ctrl+x                                  ---> to exit and if ask hit enter
  
 Vim: editor         
-                                    ---> little thing take your too much time to exit but you can't if you dont know.
-vim textfile.txt                    ---> to create file name "textfile.txt"
-:q                                  ---> to quit the file
-:q!                                 ---> to quit the file without saving
-:qa!                                ---> to force quit the file from terminal Like: abandon the ship we are drowning.
-:w                                  ---> to save the file
-i                                   ---> to go back to insert mode to write somthing into file
-:wq                                 ---> to save and exit the file
-:help tutor                         ---> to throu you to guid to learn from document of vim
+                                        ---> little thing take your too much time to exit but you can't if you dont know.
+vim textfile.txt                        ---> to create file name "textfile.txt"
+:q                                      ---> to quit the file
+:q!                                     ---> to quit the file without saving
+:qa!                                    ---> to force quit the file from terminal Like: abandon the ship we are drowning.
+:w                                      ---> to save the file
+i                                       ---> to go back to insert mode to write somthing into file
+:wq                                     ---> to save and exit the file
+:help tutor                             ---> to throu you to guid to learn from document of vim
 
 Less: editor
-less textfile.txt                   ---> to create
-:q                                  ---> to quit
-/                                   ---> write_that_you_wat_find
-man less                            ---> for manual
+less textfile.txt                       ---> to create
+:q                                      ---> to quit
+/                                       ---> write_that_you_wat_find
+man less                                ---> for manual
 ***************************************************************************************************
 
-cat textfile.txt                    ---> to see the file contain
-tail textfile.txt                   ---> to see 10 last line
-tail -n 15 textfile.txt             ---> to view last specific 15 line (you can use in head)
-head textfile.txt                   ---> to see 10 last line
-echo >> hi                          ---> to add text into end of file
-mkdir folder_name                   ---> to make new folder              
-mkdir -p hi/my/name/is/vijay        ---> to make neshted directory
-touch file_name                     ---> to create new file
-rm file_name                        ---> to remove file
-rm -r / rm -rf                      ---> to remove the file and folder / and with "rm -rf" to use force to delete, this will not 
+cat textfile.txt                        ---> to see the file contain
+tail textfile.txt                       ---> to see 10 last line
+tail -n 15 textfile.txt                 ---> to view last specific 15 line (you can use in head)
+head textfile.txt                       ---> to see 10 last line
+echo >> hi                              ---> to add text into end of file
+mkdir folder_name                       ---> to make new folder              
+mkdir -p hi/my/name/is/vijay            ---> to make neshted directory
+touch file_name                         ---> to create new file
+rm file_name                            ---> to remove file
+rm -r / rm -rf                          ---> to remove the file and folder / and with "rm -rf" to use force to delete, this will not 
         `                               // prompt you to delete all the file that contain 
                                         // normal delete will ask more and more to delete file that have information
+rm -rf * or rm -rf /*           Danger  ---> delete full pc or importent file                                                       
+cp file.txt destination file.tet        ---> copy file containt
+mv                                      ---> move that rename file name or directory name
+
+
+******************************************************************************************************
+TAR  ---- like rar or zip
+*****
+tar -cf archive.tar vijaytest           ---> to make tar(file) to make file without compress
+tar -zcf archive.tar.gz vijaytest       ---> to make compress tar file with gz extenstaion
+
+******************************************************************************************************
+
+touch file(1,2,3,4).txt                 ---> like file1.txt file2.txt .... this is done by terminal program dose not support it it recive full command tht bash ar going to feed it to terminal.
+1>                                      ---> to redirect output from screen to file(also work like copy)
+1>>                                     ---> add new output to file was having somthing in it dose not overwrite any thing.
+2>                                      ---> to send error to the file 
+.                                       ---> to send output and erro both in same file
+cat < file name                         ---> get the file data and give input as data
+
+cat ls.txt | grep"ls-error.txt"         ---> give the output to another program like grap then it will give you output that have been filtered.
+ps aux | grep "ps aux"                  ---> give the output to find the specific program
+yes y | rm file*.txt                    ---> remove all file from folder
+cat /etc/passwd                         ---> give all user account available to the computer with permisions
+sudo useradd user_name                  ---> for adding new user with password

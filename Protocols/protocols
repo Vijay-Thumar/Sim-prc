@@ -1,0 +1,203 @@
+--> HTTP 
+        have 3 main section --- and its independant
+    * http:// this is http url
+    * www.google.com this is the host name
+    * /imgphp?hl=en&ogbl this is the path that you want to redirect or want to go
+    - http use the port 80 to send and recive the data on internet
+    - port 80 is open port on internet connection that you can use to connect anything
+
+--> Http quary
+    * https://www.google.com/search   --->?<---   q=good+morning
+    - this ?mark represent the quary that have in url
+    - after this question mark the "?good+morning" that is quary that you want to search
+    - this the key and value stature q=quary+...
+
+
+
+--> HTTP is request and responce protocol
+
+    HTTP request msg
+    HTTP responce ack 
+
+--> Manual http request to server
+    * [method] [url] [version]
+      [header]
+      [body ]
+    * SYNTEX:   GET /www.google.com HTTP/1.1
+                Host: www.google.com
+        - HTTP/1.1 This represent the version of http that you are using
+        - HOST define that in google that you are going for venila google there is multiple google like
+            image.google.com
+            drive.google.com
+            photos.google.com
+
+    * there is more mentods we can use 
+        -GET, POST, PUT, DELETE, HEAD
+
+    * This 2 are importent
+        - Get to get the data like image videos location ---Safe method only get data
+        - post to update and send the data---unsafe method this one can alter the data
+
+--> HTTP Responce 
+    * [version] [status] [reason]
+      [header]
+      [body]
+    SYNTEX:     HTTP/1.1(http version) 301(responce code) move Permanently
+                location(Content type): new_url(path)
+                server name: miscrosoft-IIS/7.0 (server name)
+                Date: todyas date(when operation is performed)
+                connection: closed(connection state)
+                content-Length: Length
+    * Status codes
+        -> 100-199  Information
+        -> 200-299  Successful
+        -> 300-309  Redirection
+        -> 400-409  ClientError
+        -> 500-599  serverError  
+
+    * Popular status code
+        - HTTP Status Code 200 - OK
+        - HTTP Status Code 301 - Permanent Redirect
+        - HTTP Status Code 302 - Temporary Redirect
+        - HTTP Status Code 404 - Not Found
+        - HTTP Status Code 410 - Gone
+        - HTTP Status Code 500 - Internal Server Error 
+        - HTTP Status Code 503 - Service Unavailable
+
+--> OSI model
+    1. Application  ---> HTTP
+    2. Presentation
+    3. Session
+    4. Transport    ---> TCP,UDP
+    5. Network      ---> ip
+    6. Data Link    ---> Ethernet
+    7. Physical
+
+--> tcp handshake
+
+        tcpClient-------SYN______    Tcp Server
+                 -------SYN/ACK--|
+        ClientPort------ACK     ---->Service port
+
+    ** 3 way handshake
+
+    1.  Requst signal   ack of that request that server have recive signal
+        Then Ack to transfer then client ack that it has ack from server
+        
+    2.  Client: data transfer req   Server: Ack to request
+        Server: ack to send data    Client: Ack to server that it has responce
+    
+    3.  Data transmition
+        client: Close connection Server: close connection
+
+--> HTTP proxy  -- may the hardware or software
+
+    proxy is one server or many server that near the client to give some daily data that make speedy data
+    proxy have to be config for the internet
+
+    reverce proxy this proxy is based on server side this is also use for implement some funcionality like
+        load balancing
+        ssl aclaration
+        firewall proxy
+        cashing proxy
+
+--> Cookies
+    
+    - Cookies are use to save data on local machine
+    - it use to track use not to identification it cannot varify use from cookie and give acces to certen pages or any functionality
+    - http cookie responce
+        HTTP/1.1 200 OK
+        Set-Cookie: fname=Vijay&lname=thumar; or GUID=313298165416AS6654..;(MORE USED IN MANY WEBS)
+                    domain=.searchengine.com;
+                    path=/
+                    ...
+    - When cookie set on browser by web page then it travel with every request that need the cookie cookie are good in some way and have disadvantages too.
+
+--> basic auth
+
+    - User request the reliable source from web page then serve challange the user to authorised your self by giving the credential
+
+    - in basic auth there is responce if credential are correct then it has auth head with user name and pass so it is rarly used in web that are not have ssh
+
+--> digest auth 
+
+    - this is next version of basic auth this does not transmit user password using base 64 encoding
+    this send digest user have to complet #5 algo with nonce that server provide during auth
+    - this digest is batter when secure http not available(HTTPS) this is still unsecure because someone can install software that see the http msg on network can know the nonce so it is not that much secure
+
+--> Windows auth
+
+    - this is more popular it has default security that windows provide but you can use only if you have windows device.
+
+--> form based auth
+
+    - this is the most popular auth in web
+    - we call form auth because we have form that use can use to enter the crandital in app and login.
+
+--> HTTPS : U se port: 443
+
+    - Secure http can encrypt the password and then send the pass
+    * Disavdvantage
+        - cost
+        - perfomance
+        - cannot use cash in public
+
+
+********************************
+            TCP
+********************************
+TCP Segment
+
+Source-port-number      destination-port-number
+            Sequence-number
+            Ack-number
+Off-set     Reserved    Window size
+    checksum        urgent pointer
+        options/padding
+              DATA
+
+This use hand shack to connect with server that i've give detail explanation early.
+
+--> Detecting lost packets 
+
+    -> solved by retransmit lost packet
+    -> time delay retransmit
+    -> ack lost package
+    -> full data retransmit and client delete previous data(all packets)
+
+******************************************
+                DNS
+******************************************
+
+--> DNS
+
+    - DOMAIN NAME SYSTEM
+    - DNS use to set hostname to the ip that is hosted in web
+    - ip are hard to remember thats why dns was introduced
+    - if you know the ip of 
+
+--> DNS working
+
+    - DNS convert the ip to page name that process called, DNS query and the process of finding the corresponding IP address is known as DNS resolution.
+    - This has 3 sub section.
+        - Recursive query --> DNS server has to respond with the requested resource record else give Error
+        - Iterative query --> DNS client will continue to request a response from multiple DNS servers until the best response is found, or Error and time out happen.
+        - Non-recursive query --> this happen when you have stored the dns in locally and you don't have to find the dns for that ip or the resource that you want is alrady stored in cache.
+
+--> DNS caching
+
+    - DNS caching is the process of storing DNS data on the DNS records closer to a requesting client to be able to resolve the DNS query earlier.
+    - This can reduce the load in network.
+    - DNS records are stored in DNS cache is called time to live(TTL)
+    
+    * There is multiple caching
+    - Browser DNS Caching
+    - OS level DNS caching
+
+--> DNS server
+
+    * there trype of dns server.
+    - DNS recursor 
+    - Root name server
+    - Top Level Domain (TLD) nameserver
+    - Authoritative nameserver
