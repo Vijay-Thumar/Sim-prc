@@ -83,6 +83,7 @@ mv                                      ---> move that rename file name or direc
 *********************************************************************************************************
 tar -cf archive.tar vijaytest           ---> to make tar(file) to make file without compress
 tar -zcf archive.tar.gz vijaytest       ---> to make compress tar file with gz extenstaion
+tar -xzf archive.tar.gz -C mydata/      ---> to extrect tar file.
 
 ******************************************************************************************************
 
@@ -98,3 +99,34 @@ ps aux | grep "ps aux"                  ---> give the output to find the specifi
 yes y | rm file*.txt                    ---> remove all file from folder
 cat /etc/passwd                         ---> give all user account available to the computer with permisions
 sudo useradd user_name                  ---> for adding new user with password
+sudo chown ubuntu:ubuntu /hello         ---> for giveing access to the specific file
+sudo chmod u=rw,g=rw,o=rw               ---> for giveing this file can use or modify it(you have to inside this directory)
+sudo chmod 777 file.txt                 ---> for give read write and execute for user,group,other(everyone that mean 777)
+sudo chmod 667 file.txt                 ---> read and write(user and group everyone else can execute)
+700 only for ubuntu
+600 only for user read and write
+640 group read cant write 
+sudo chmod +x my-new-program            ---> +x to add execution to file(-x to remove execution permision)
+        +w/-w                           ---> for writing for user and group
+
+printenv  ***IMP******                  ---> to see path varible thos have been set
+
+sudo vi /etc/environment                ---> to set varible to all users
+vi ~/.bashrc                            ---> to set the env varible to ubuntu
+source ~./bashrc                        ---> to rerun the bashrc file
+
+vi .bash_profile                        ---> to open bash bash_profile for making bashrc run always when session starts
+                code :                  if[ -f ~/.bashrc ]; then 
+                                                source ~/.bashrc
+                                        fi
+
+ps                                      ---> to see command process and its like cmd taskmanager
+ps aux                                  ---> to see full pc task 
+sleep 100                               ---> wait for 100 sec and finish the task 
+jobs                                    ---> give you all jobs that are running or stoped in terminal
+bg 1                                    ---> start that process in background
+fg 1                                    ---> this command send you to the process that is executing
+jobs -l                                 ---> take jobs id and display
+echo $?                                 ---> to see the process is finish or not (finish=0 else ~values)
+touch MYfile.txt && date >> MYfile.txt && uptime >> MYfile.txt ---> this will complete if previous process is finish
+ 
