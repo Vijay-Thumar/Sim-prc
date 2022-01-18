@@ -128,5 +128,6 @@ bg 1                                    ---> start that process in background
 fg 1                                    ---> this command send you to the process that is executing
 jobs -l                                 ---> take jobs id and display
 echo $?                                 ---> to see the process is finish or not (finish=0 else ~values)
-touch MYfile.txt && date >> MYfile.txt && uptime >> MYfile.txt ---> this will complete if previous process is finish
- 
+touch MYfile.txt && date >> MYfile.txt 
+&& uptime >> MYfile.txt                 ---> this will complete if previous process is finish
+  
