@@ -78,9 +78,9 @@ cp file.txt destination file.tet        ---> copy file containt
 mv                                      ---> move that rename file name or directory name
 
 
-******************************************************************************************************
-TAR  ---- like rar or zip
-*****
+*********************************************************************************************************
+                                        TAR  ---- like rar or zip
+*********************************************************************************************************
 tar -cf archive.tar vijaytest           ---> to make tar(file) to make file without compress
 tar -zcf archive.tar.gz vijaytest       ---> to make compress tar file with gz extenstaion
 
