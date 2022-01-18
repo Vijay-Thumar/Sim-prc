@@ -50,3 +50,74 @@ Advantages :
             - Low cost ->  this is distributed system so you dont have to play whole price
             - More knowlage -> you can see your app using by coustomers
             - New customers -> its online so every can find you and test your application then purchase the service so its like (પહેલા વાપરો પછી વિશ્વાસ કરો - નિરમા)
+            
+Disadvantages :
+            - You have to purchase the software before try 
+            - more slow revenue from saas vendors
+            - less customization for software
+            - new sales challenges (if user is not cloud friendly)
+            - New change in pricing and sales
+
+********************************************
+Impact of SaaS
+            - Batter user access you don't have to install try before buy.
+            - For software vendors is different like pricing and everything else.
+
+
+**********************************---------------------------------****************************
+Main part The Big Picture
+
+ Cloud plateform Technologies:
+ 
+  Compute (1)
+ infrastature as a services (IaaS) -> user can create and use virtual machine
+ Plateform as a serveices (PaaS)->  application run on supporting services 
+
+ Compute(2)
+ Containers as a services (CaaS) -> Kubernetes "user can deploy and run in Containers"
+ Function as a Services (FaaS) -> user can create all services as function and invok that functions
+
+ DATA (3)
+ Virtual machineobject storages
+ Relational storage
+ NoSqul Storage
+ 
+
+ **********************
+ Private Clouds
+ ***********************
+
+ That storage that pre excist in organization and that store on internet that is not cloud
+ (you must have to services link to your database or cloud some implemention has to be there)
+ like : Iaas, PaaS
+
+ Three public cloud technology 
+1. prem Server deployment Like : AWS Outpost, Azure Stack
+2. Cloud for IOT Devices: AWS IoT Greengrass, Azure IoT Hub
+3. Edge Computing
+
+1. Azure Stack Hub --> This take all azure take servie and make it availabe in Enterprices(locally).
+    This is Miscrosoft Azure's code
+    You have to purchase togather with hardware from organization like hp or dell
+    Change Organization for mantainanc(Organization Management)
+
+2. AWS IoT Greengrass --> just like previous this aws also give all services to the green-grass and make it available to Enterprices(locally - private server)
+    This is for IOT -- For Consumers
+    This use Faas(Lambda)  function as setvies (main***)
+    Messaging between green-grass devices
+
+    This is green-grass this look to the fuature 
+
+3. Edge Computing --> involves some compution into on-prem devices
+                        - This give more speedy perfomance for Example If your connection with server is slow then you have to wait for the responce
+                        - So for real-time responce for iot device it inherit the services from cloud to locally for personal faster usage
+                        - This is probably private cloud
+
+************************
+Impact of private coud
+************************
+- This make your local on-prim world batter 
+- public cloud and private cloud is hybrid cloud the main gole for today
+- private cloud is slow market
+- private cloud give real value
+- it provide mordan application solution
