@@ -1,0 +1,52 @@
+Cloud :- it means that your database and other services that your using or providing that are on internet that  service that provide you data through internet that is called cloud service.
+
+cloud 3 type
+        cloud app --- saas
+        cloud plateform --- ias, pas
+        privete cloud --- comp
+
+In cloud there is thos who are using saas and thos who not using cloud but they have to relay on saas by some way
+
+Saas is multi-tenancy
+        --> it means shared that server is shared to every coustomers and database are deferent but thos data base can insulated with each other so that cannot mearge(application of saas ensure that)
+
+Saas example :
+                --> CRM         ERP         Email     Storage       Productivity
+        Salseforce  CRM
+        Oracle      cx cloud    cloud ERP
+        SAP         Sales Cloud Cloud
+        Microsoft  365 Sal      365 finance ----------full 365 we are using----
+        Google                              ----------Google work space--------
+        Apple                               iCloud------------
+        Dropbox                                        Dropbox
+        mega                                            MEGA Storage
+        etc...      ...         ...         ...         ...         ...
+
+            this is an example of comp that are providing saas
+**********************
+Evaluation SaaS  user
+**********************
+Advantages : 
+            Faster Development  -> no local installation require(if you want you can customize)
+            Usage Payment       -> Low cost
+            Less financial risk -> if your bussness is going then you pay more and use more(free trial)
+            Reduce primices     -> don't need workers 
+            No mantainance      -> you dont have to patch anything like os update for windows or linux
+
+Disadvantages:
+            - Requires trusting a SaaS provider -> for availability and security
+            - Can rise legal/regulatory concerns -> your using saas that may have been located outside of youe country so you may feeding the data that is importent to country outside of borders
+            - Can limit customization -> multi-tanancy so you cannot do much of customization
+            - Can be harder to integrate -> this is hard somtime
+            - Can have lower performance -> it can sometime take more then you think like amazone stop running for 1 or 2 second then that may cause the some tranzation faillur that can cost money issues 
+
+***********************
+Saas: Software vendors
+***********************
+
+Advantages :
+            - Can provide more revenue stream -> This is like mantainance service you have to pay for every month to use so it is more stable source of money then licance
+            - Direct sell -> This can sold Direct to business decision makers so you dont need staff
+            - Low cost ->  this is distributed system so you dont have to play whole price
+            - More knowlage -> you can see your app using by coustomers
+            - New customers -> its online so every can find you and test your application then purchase the service so its like()
