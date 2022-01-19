@@ -121,3 +121,41 @@ Impact of private coud
 - private cloud is slow market
 - private cloud give real value
 - it provide mordan application solution
+
+
+*********************************************************************************************************
+ Infrastature for aws
+
+ infrastature.aws 
+    Region
+        Availability Zone
+            Edge Location
+                
+**/ Building own data center
+
+    Capitalized Expenditure (CaPEX)
+    This expance is for your Building, Servers, and supporting equipment
+
+    Oprating Expenditure (opEx)
+    This expance is of On going connectivity, utility, maintenance cost
+
+(this cost but somtime use get dinied access to the application because of fix data center capacity)
+
+**/ Cloud data center with same application
+
+    In this there is application load and your usage Cloud give you cost that based on your usage.
+
+(Your data center is variable so your user have full access to your application all the time)
+
+**/ Financial implications
+    Manage your own data center
+        Large invesment
+        Potential under Capacity or Unmet Demand
+        Increasing Capacity Take time because of you have to buy all the things
+        Monthly Cost will be on infrastature
+    
+    Leverage Cloud Infrastature
+        No invesment
+        You pay for that you use
+        Capacity can add immediately
+        Monthly cost based in user demand
