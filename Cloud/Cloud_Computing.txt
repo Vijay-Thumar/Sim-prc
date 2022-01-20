@@ -159,3 +159,9 @@ Impact of private coud
         You pay for that you use
         Capacity can add immediately
         Monthly cost based in user demand
+
+awstcocalculator.com
+calculating the values for prising in on-premises vs cloud
+
+calculator.aws
+aws pricing calculater this will give you the price from service that you choose 
