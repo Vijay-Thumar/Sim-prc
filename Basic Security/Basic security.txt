@@ -1,0 +1,129 @@
+5. Deffance against the Excessive Data Exposure
+        - not let excess data leave your server (An attacker can and will look at the content of responses from your API. If those responses don't contain data that they shouldn't, then there is no vulnerability)
+        - There needs to be consideration of what data can be used and when. An understanding of which data is PII, sensitive, or confidential
+    - Sdditional code then we know which data are using then we know which defance we are going to implement
+
+    - Return object not just removing / blank data and (to see the what user is seeing)
+    - Schema for each endpoint (if you want to add functionality then you shoud add that in future not rightnow send more extra hidden data, so in future that will help to make new featue)
+    - filtering fild on server not on client
+
+    
+(5) Lack of resource
+
+    ** Exploitabality **
+        - making request is enough (on weak point)
+        - api come from authenricated user (you need credential)
+        - load testing tools
+            - E.g. JMeter
+            - DOS 
+            - DDOS
+
+    ** Large file upload **
+        - upload featue
+        - Strain on resource
+        - disk space
+        - memory(ram)
+
+    ** Password Brute Force **
+        - Incorrect password
+            - Several tries
+            - Is it really the user?
+        - Unlimited guesses
+            - Automated tools
+            - Common password lists
+
+    ** Qury parameter tampering **
+        - request larg amount of records
+        - filter racord (using date or numbers)
+        - page size 
+        - complex qury can reduce perfomance
+
+    ** Prevalence **
+        - Occurs in a variety of ways
+        - Load testing
+            - Put api in load 
+            - which part of an api and highlited the portion that is not working properly
+
+    ** Detectability **
+        - Common failure point
+            - invalid passwords
+            - File uploades
+            - Data queries 
+        - Slow responses
+
+    **Defance - Rate Limiting **
+        - Requset throttling
+            - Limit request in a time period
+            - Error if exceeded - HTTP 429
+        - Request throttling in the cloud
+            - Azure API management
+            - AWS API gateway
+        - Authenricated users are easily throttled
+        - Anonymous users can be harder
+        
+        -Anunymous acess to authentication
+        -Limit number of login attempts (how many try we assign and lock time)
+            3-5 guesses
+        -Lock account
+            Minimum should be minutes
+            Maximum should be contact admin
+
+    ** Defance **
+        - File upload defance controled by config
+            - Config to limmit request size
+            - use causation if increasing
+        - Paged query defense
+            - works only when trusting user input
+            - NEVER trust use input!
+            - Validate maximum page size
+        - Input validation on all input from user
+
+(7) Exploitabality 
+    - May not be simple 
+    - Understand what a request look like 
+        - JSON
+        - Query parameters
+    - Get records
+        - No content for a list 
+        - ID for single record
+    - Create records
+        - Need to know field names
+
+    (Prevalence )
+
+    can be missign completely
+    - Authotization checks
+        - hard coded
+        - configred
+    - Complexity cause problems
+
+    (Detectability)
+
+    - Restful
+        - Whatys each verb does 
+        - Common URL formate
+        - GET /user
+        - GET / user/ 12345
+    - Easier to guesses
+        - /admin
+        - Tools to help
+
+    -Depends on the endpoints
+        - /admin is a common targate
+    - Allow a user more:
+        - Control of data
+        - Functionality
+    
+    ** Defance **
+    - Hiding endpoint dosen't work
+    - Role based access
+        - Admin, user etc.
+        - Assign roles to user
+        - Roles access endpoints
+
+    Aubject-object-action
+    Subject : Admin
+    Object : User 
+    Action : Create, Update, Delete
+
+    

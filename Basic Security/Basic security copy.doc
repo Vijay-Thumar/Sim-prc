@@ -1,0 +1,49 @@
+5. Deffance against the Excessive Data Exposure
+        - not let excess data leave your server (An attacker can and will look at the content of responses from your API. If those responses don't contain data that they shouldn't, then there is no vulnerability)
+        - There needs to be consideration of what data can be used and when. An understanding of which data is PII, sensitive, or confidential
+    - Sdditional code then we know which data are using then we know which defance we are going to implement
+
+    - Return object not just removing / blank data and (to see the what user is seeing)
+    - Schema for each endpoint (if you want to add functionality then you shoud add that in future not rightnow send more extra hidden data, so in future that will help to make new featue)
+    - filtering fild on server not on client
+
+    
+(5) Lack of resource
+
+    ** Exploitabality **
+        - making request is enough (on weak point)
+        - api come from authenricated user (you need credential)
+        - load testing tools
+            - E.g. JMeter
+            - DOS 
+            - DDOS
+
+    ** Large file upload **
+        - upload featue
+        - Strain on resource
+        - disk space
+        - memory(ram)
+
+    ** Password Brute Force **
+        - Incorrect password
+            - Several tries
+            - Is it really the user?
+        - Unlimited guesses
+            - Automated tools
+            - Common password lists
+
+    ** Qury parameter tampering **
+        - request larg amount of records
+        - filter racord (using date or numbers)
+        - page size 
+        - complex qury can reduce perfomance
+
+    ** Prevalence **
+        - Occurs in a variety of ways
+        - Load testing
+            - Put api in load 
+            - which part of an api and highlited the portion that is not working properly
+
+    ** Detectability **
+        -Common failure point
+        
