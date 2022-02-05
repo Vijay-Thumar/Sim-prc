@@ -1,5 +1,5 @@
 import java.util.*;
-class TestClass {
+class XOR {
 public static void main(String args[] ) throws Exception {
        Scanner sc = new Scanner(System.in);
        int c= sc.nextInt();

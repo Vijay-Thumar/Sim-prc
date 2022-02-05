@@ -1,4 +1,4 @@
-public class NQueenProblem {
+public class NQueen {
 	final int N = 4;
 	void printSolution(int board[][])
 	{
