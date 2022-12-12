@@ -13,3 +13,8 @@ git log                                                                     (git
 git branch -> /branch_name/                                                 (to create new branch)
 git checkout -> /branch_name that you want to jump on for working/          (to switch branch)
 git push --set-upstream origin /branch_name that you want to work on        (to set the branch as up stream)
+git branch -b New_branch name                                               (for creating and checkout to that branch)
+git branch -D branch_name                                                   (to delete that branch from local and take new one from remote)
+git pull origin branch_name                                                 (to take pull or new code from that branch)
+git push origin branch_name                                                 (to push code to specific branch)
+git log --oneline                                                           (to see all logs in one line in shot single line)
