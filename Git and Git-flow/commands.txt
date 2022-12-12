@@ -18,3 +18,7 @@ git branch -D branch_name                                                   (to 
 git pull origin branch_name                                                 (to take pull or new code from that branch)
 git push origin branch_name                                                 (to push code to specific branch)
 git log --oneline                                                           (to see all logs in one line in shot single line)
+git reset HEAD~1            *require force push {command line: 23 }         (to undo last commit in soft mode you can see the chages in vscode )
+git reset --hard HEAD~1                               not suggested         (to remove last commit from git Code cannot recover)
+git push -f   --> after git reset and rebase this command will be required  (to push chages forcefully) 
+git rebase -i main feature_branch                                           (rebase use for changes commit and meargin commits *require force push)
