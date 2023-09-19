@@ -22,3 +22,8 @@ git reset HEAD~1            *require force push {command line: 23 }         (to 
 git reset --hard HEAD~1                               not suggested         (to remove last commit from git Code cannot recover)
 git push -f   --> after git reset and rebase this command will be required  (to push chages forcefully) 
 git rebase -i main feature_branch                                           (rebase use for changes commit and meargin commits *require force push)
+
+
+** Github clone via token ( Token can be generated via setting -> developer_setting -> personal_token -> token(classic) -> gen_new_token )
+https://username:token@github.com/usernameRepoOwner/Repogithublink
+example: https://vijay-thuamar:token@github.com/ChintanJoshi14/Fundamentals-for-Everyone.git  (complete example with repo )
