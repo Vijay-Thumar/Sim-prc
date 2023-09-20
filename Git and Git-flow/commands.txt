@@ -1,6 +1,10 @@
+** Global is not recommended approach // remove --global flag and execute same command
 git config --global user.username "your_user_name"   (to set your user name)
-git config --global user.email "your_user_name"   (to set your email)
+git config --global user.email "your_user_name"      (to set your email)
+
+** add password and save in cache
 git config --global credential.helper cache   (to save your password for you next time)
+git config --global --unset credential.helper (to clear cached password form local)
 
 git clone                                                                   (to copy repo into the local machine from remote repo)
 git status                                                                  (to check the status of your edits and viewing new changes)
@@ -26,4 +30,8 @@ git rebase -i main feature_branch                                           (reb
 
 ** Github clone via token ( Token can be generated via setting -> developer_setting -> personal_token -> token(classic) -> gen_new_token )
 https://username:token@github.com/usernameRepoOwner/Repogithublink
-example: https://vijay-thuamar:token@github.com/ChintanJoshi14/Fundamentals-for-Everyone.git  (complete example with repo )
+example: https://vijay-thuamar:token@github.com/ChintanJoshi14/Fundamentals-for-Everyone.git  (complete example with repo)
+
+** if your having 403 unauthorized access and cannot do pull and push on repo then execute this command 
+syntex: git remote set-url origin https://yourgithubusername:yourpersonalaccesstoken@github.com/yourgithubusername/reponame.git
+Example: git remote set-url origin https://vijay-thumar-simform:token@github.com/vijay-thumar-simform/Vue-Stripe-POC.git
